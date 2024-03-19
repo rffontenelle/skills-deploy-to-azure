@@ -1,4 +1,4 @@
-name: Deploy to staging 
+name: Deploy to staging
 
 on:
   pull_request:
@@ -72,7 +72,7 @@ jobs:
     name: Deploy app container to Azure
     steps:
       - name: "Login via Azure CLI"
-        uses: azure/login@v3
+        uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
